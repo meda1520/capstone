@@ -1,0 +1,25 @@
+
+{
+  "type": "object",
+  "properties": {
+    "user": {
+      "type": "string"
+    },
+    "prompt": {
+      "type": "string"
+    },
+    "task_type": {
+      "type": "string",
+      "enum": [
+        "summarization",
+        "classification",
+        "extraction"
+      ]
+    }
+  },
+  "required": [
+    "user",
+    "prompt",
+    "task_type"
+  ]
+}
